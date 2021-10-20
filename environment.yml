@@ -1,0 +1,19 @@
+name: hcd
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy>=1.21
+  - pandas>=1.3
+  - matplotlib>=3.4
+  - tensorflow>=2.4
+  - tensorboard
+  - jupyter
+  - scikit-learn
+  - seaborn
+  - pydot
+  - graphviz
+  - opencv
+  - pillow
+  - imbalanced-learn
