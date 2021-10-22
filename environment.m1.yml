@@ -15,8 +15,8 @@ dependencies:
   - pydot=1.4.2
   - scikit-learn=1.0
   - seaborn=0.11.2
-  - tensorboard=2.6.0
-  - tensorflow-deps=2.5.0
+  - tensorboard
+  - tensorflow-deps
   - pip:
-    - tensorflow-macos==2.5.0
-    - tensorflow-metal==0.1.2
+    - tensorflow-macos
+    - tensorflow-metal
