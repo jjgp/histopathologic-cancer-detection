@@ -1,6 +1,5 @@
 {
     "image": "continuumio/miniconda3:master",
     "extensions": ["ms-python.python"],
-    "forwardPorts": [9000],
     "postCreateCommand": "conda env create -f environment.yml"
 }
