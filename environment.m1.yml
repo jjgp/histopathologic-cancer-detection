@@ -1,4 +1,4 @@
-name: hcd-m1
+name: hcd
 channels:
   - apple
   - conda-forge
@@ -22,6 +22,6 @@ dependencies:
   - tensorboard=2.6.0
   - tensorflow-deps=2.6.0
   - pip:
-    - kaggle=1.5.12
-    - tensorflow-macos=2.6.0
-    - tensorflow-metal=0.2.0
+    - kaggle==1.5.12
+    - tensorflow-macos==2.6.0
+    - tensorflow-metal==0.2.0
