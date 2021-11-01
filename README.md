@@ -17,4 +17,9 @@
 - https://medium.com/@udiyosovzon/how-to-activate-conda-environment-in-vs-code-ce599497f20d
 - https://github.com/microsoft/vscode-dev-containers
 
+## pre-commit
+
+- https://github.com/jjgp/hiring-manager/blob/main/.pre-commit-config.yaml
+- https://pre-commit.com/
+
 
