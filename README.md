@@ -21,5 +21,3 @@
 
 - https://github.com/jjgp/hiring-manager/blob/main/.pre-commit-config.yaml
 - https://pre-commit.com/
-
-
