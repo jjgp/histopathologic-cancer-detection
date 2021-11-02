@@ -7,6 +7,7 @@ dependencies:
   - flake8=4.0.1
   - graphviz=2.49.1
   - imbalanced-learn=0.8.1
+  - isort=5.9.3
   - jupyter=1.0.0
   - matplotlib=3.4.3
   - numpy=1.19.5

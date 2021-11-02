@@ -19,5 +19,7 @@
 
 ## pre-commit
 
+Need to add tidbit of how to use pre-commit
+
 - https://github.com/jjgp/hiring-manager/blob/main/.pre-commit-config.yaml
 - https://pre-commit.com/
