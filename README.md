@@ -25,12 +25,8 @@ If using another processor or OS then simply create the `conda` environment with
 conda env create -f enrivonment.yml
 ```
 
-### Using `pre-commit`
-
-...Need to add tidbit of how to use pre-commit
-
-- https://github.com/jjgp/hiring-manager/blob/main/.pre-commit-config.yaml
-- https://pre-commit.com/
+The project does have a [`.devcontainer`](https://code.visualstudio.com/docs/remote/containers)
+setup they may be used to run in a dockerized environment or on [GitHub Codespaces](https://github.com/features/codespaces).
 
 ### Downloading dataset
 
@@ -38,13 +34,19 @@ The `kaggle` CLI is installed with the `conda` environment. To download the data
 make sure to first obtain the [API credentials](https://github.com/Kaggle/kaggle-api#api-credentials).
 A VS Code task is available to download the dataset.
 
-### Tensorflow Plugin - Metal
+### Using `pre-commit`
 
-[Getting Started with tensorflow-metal PluggableDevice](https://developer.apple.com/metal/tensorflow-plugin/)
+This project uses the [pre-commit](https://pre-commit.com/) to automate tedium and
+enforce code quality standards. The `pre-commit` dependency is available in the `conda`
+environments. To install the `pre-commit` git hook run:
 
-### Working with VS Code
+```
+pre-commit install
+```
 
-- https://code.visualstudio.com/docs/python/environments
-- https://medium.com/analytics-vidhya/efficient-way-to-activate-conda-in-vscode-ef21c4c231f2
-- https://medium.com/@udiyosovzon/how-to-activate-conda-environment-in-vs-code-ce599497f20d
-- https://github.com/microsoft/vscode-dev-containers
+It may be useful to run `pre-commit` outside of a `git` hook. To do so run read up on
+the usage:
+
+```
+pre-commit run --help
+```
