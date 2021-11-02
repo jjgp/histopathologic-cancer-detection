@@ -1,8 +1,5 @@
 {
     "image": "continuumio/miniconda3:master",
     "extensions": ["ms-python.python"],
-    "postCreateCommand": "conda env create -f environment.yml",
-    "settings": {
-        "python.defaultInterpreterPath": "/opt/conda/envs/hcd/bin/python"
-    }
+    "postCreateCommand": "conda env create -f environment.yml"
 }
