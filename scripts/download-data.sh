@@ -14,3 +14,5 @@ if [ ! -x "$KAGGLE_PATH" ]; then
 fi
 
 $KAGGLE_PATH competitions download -c histopathologic-cancer-detection -p data/
+
+unzip data/histopathologic-cancer-detection.zip -d data/
