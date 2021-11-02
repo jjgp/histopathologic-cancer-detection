@@ -1,6 +1,6 @@
 # Histopathologic Cancer Detection
 
-This project applies learnings from the [FourtBrain Machine Learning Engineering cirriculum](https://www.fourthbrain.ai/machine-learning-engineer)
+This project applies learnings from the [FourthBrain Machine Learning Engineering cirriculum](https://www.fourthbrain.ai/machine-learning-engineer)
 to a previous Kaggle competition. The competition involves identifiying metastic cancer
 from images. Vist the [overview](https://www.kaggle.com/c/histopathologic-cancer-detection/overview)
 page on Kaggle to see the competition details.
@@ -9,7 +9,21 @@ page on Kaggle to see the competition details.
 
 ### Installing dependencies
 
-...
+If installing on a Mac with an M1 processor, you can should follow the instructions to
+use the [tensorflow-metal PluggableDevice](https://developer.apple.com/metal/tensorflow-plugin/)
+for accelerated training. It does require using macOS Monterey and Miniforge. Given the
+advice from the Apple developer docs, use the following command to create the `conda`
+environment:
+
+```
+conda env create -f enrivonment.m1.yml
+```
+
+If using another processor or OS then simply create the `conda` environment with:
+
+```
+conda env create -f enrivonment.yml
+```
 
 ### Using `pre-commit`
 
