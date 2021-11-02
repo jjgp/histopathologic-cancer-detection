@@ -9,11 +9,11 @@ page on Kaggle to see the competition details.
 
 ### Installing dependencies
 
-If installing on a Mac with an M1 processor, you can should follow the instructions to
-use the [tensorflow-metal PluggableDevice](https://developer.apple.com/metal/tensorflow-plugin/)
-for accelerated training. It does require using macOS Monterey and Miniforge. Given the
-advice from the Apple developer docs, use the following command to create the `conda`
-environment:
+If installing on a Mac with an M1 processor, you should follow the instructions to use
+the [tensorflow-metal PluggableDevice](https://developer.apple.com/metal/tensorflow-plugin/)
+for accelerated training. It does require using macOS Monterey and [Miniforge](https://github.com/conda-forge/miniforge).
+Given the prerequisites listed in the Apple developer docs, use the following command
+to create the `conda` environment:
 
 ```
 conda env create -f enrivonment.m1.yml
@@ -26,12 +26,12 @@ conda env create -f enrivonment.yml
 ```
 
 The project does have a [`.devcontainer`](https://code.visualstudio.com/docs/remote/containers)
-setup they may be used to run in a dockerized environment or on [GitHub Codespaces](https://github.com/features/codespaces).
+setup they may be used to run the project in a dockerized environment or on [GitHub Codespaces](https://github.com/features/codespaces).
 
-### Downloading dataset
+### Downloading the dataset
 
 The `kaggle` CLI is installed with the `conda` environment. To download the dataset,
-make sure to first obtain the [API credentials](https://github.com/Kaggle/kaggle-api#api-credentials).
+make sure to first obtain [API credentials](https://github.com/Kaggle/kaggle-api#api-credentials).
 A VS Code task is available to download the dataset.
 
 ### Using `pre-commit`
