@@ -1,3 +1,4 @@
 {
-    
+    "python.pythonPath": "${env:HOME}/miniforge3/envs/hcd/bin/python",
+    "python.terminal.activateEnvironment": true
 }
