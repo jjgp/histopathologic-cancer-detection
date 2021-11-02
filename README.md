@@ -50,3 +50,10 @@ the usage:
 ```
 pre-commit run --help
 ```
+
+### Unit testing
+
+The `conda` environments include [`pytest`](https://docs.pytest.org/en/6.2.x/contents.html#)
+and [`testbook`](https://testbook.readthedocs.io/en/latest/index.html). This allows for
+the unit testing of notebooks in addition to python modules. The tests may also be ran
+by simply using `pytest` or the VS Code UI.
