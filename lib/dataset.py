@@ -16,19 +16,22 @@ class Dataset(object):
         self.images_dirpath = os.path.join(data_dirpath, images_dirname)
         self.npy_filepath = os.path.join(data_dirpath, npy_filename)
 
-    def read_csv(self):
-        return pd.read_csv(self.csv_filepath)
-
     def image_path(self, id):
         return os.path.join(self.images_dirpath, id + ".tif")
+
+    def read_csv(self):
+        return pd.read_csv(self.csv_filepath, index_col="id")
+
+    def read_image(self, id):
+        return rgb_imread(self.image_path(id))
 
     def read_images_and_labels(self, labels_df):
         images = None
         if os.path.exists(self.npy_filepath):
             images = np.load(self.npy_filepath, allow_pickle=True)
         else:
-            image_paths = labels_df["id"].map(self.image_path)
-            images = image_paths.map(rgb_imread).to_numpy()
+            values = labels_df.index.to_numpy()
+            images = np.array(list(map(self.read_image, values)))
             np.save(self.npy_filepath, images)
         labels = labels_df["label"].to_numpy()
         return images, labels
